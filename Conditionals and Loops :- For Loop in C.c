@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+
+int main() 
+{
+    int a, b;
+    scanf("%d\n%d", &a, &b);
+  	// Complete the code.
+
+    char *refArray[]={"zero","one","two","three","four","five","six","seven","eight","nine"}; 
+    for(int i = a ; i<=b ; i++){
+    if(i<=9){
+        printf("%s\n",refArray[i]);
+    }
+    else{
+         (i %2 == 0) ? printf("even\n") : printf("odd\n");
+    }
+
+}
+
+    return 0;
+}
+
